@@ -43,7 +43,6 @@ export const deleteDog = () => dispatch => {
 export const FETCH_CAT_SUCCESS = 'FETCH_CAT_SUCCESS';
 export const FETCH_CAT_FAILURE = 'FETCH_CAT_FAILURE';
 export const fetchCat = () => dispatch => {
-  console.log('fetching!');
   return fetch(`${API_BASE_URL}/cat`, {
     method: 'GET',
     headers: {
